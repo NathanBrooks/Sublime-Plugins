@@ -13,4 +13,6 @@ key binding:
 
 add above to key bindings and the .py to the user package directory. 
 
-The forward argument will determine if a selected area will use the front or the back end of the selection for the point to add.
+The _forward_ argument will determine if a selected area will use the front or the back end of the selection for the point to add.
+
+The _dropCursor_ argument for loading will determine if you keep the the current active cursors before loading in the saved ones.
