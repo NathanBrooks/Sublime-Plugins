@@ -8,7 +8,7 @@ saves cursor locations in memory to be loaded at a later time
 key binding:
 ~~~ Json
     { "keys": ["ctrl+shift+y"], "command": "cur_save", "args": {"forward": false} },
-    { "keys": ["ctrl+shift+o"], "command": "cur_load" }
+    { "keys": ["ctrl+shift+o"], "command": "cur_load", "args": {"dropCursor": true} }
 ~~~
 
 add above to key bindings and the .py to the user package directory. 
