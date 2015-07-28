@@ -26,7 +26,11 @@ class CurSave(sublime_plugin.TextCommand):
 
 
 class CurLoad(sublime_plugin.TextCommand):
-    def run(self, edit):
+    def run(self, edit, dropCursor):
+        MyList = HistoryMan.getHistory()
+
+        if dropCursor:
+            self.view.sel().clear()
         MyList = HistoryMan.getHistory()
         for i in range(len(MyList)):
             self.view.sel().add(sublime.Region(MyList[i], MyList[i]))
