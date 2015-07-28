@@ -31,7 +31,7 @@ class CurLoad(sublime_plugin.TextCommand):
 
         if dropCursor:
             self.view.sel().clear()
-        MyList = HistoryMan.getHistory()
+
         for i in range(len(MyList)):
             self.view.sel().add(sublime.Region(MyList[i], MyList[i]))
         HistoryMan.clearHistory()
