@@ -12,4 +12,5 @@ key binding:
 ~~~
 
 add above to key bindings and the .py to the user package directory. 
-the forward argument will determine if a selected area will use the front or the back end of the selection for the point to add
+
+The forward argument will determine if a selected area will use the front or the back end of the selection for the point to add.
