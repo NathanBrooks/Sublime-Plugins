@@ -16,3 +16,12 @@ add above to key bindings and the .py to the user package directory.
 The _forward_ argument will determine if a selected area will use the front or the back end of the selection for the point to add.
 
 The _dropCursor_ argument for loading will determine if you keep the the current active cursors before loading in the saved ones.
+
+#DateConversion
+
+key binding:
+~~~ Json
+    { "keys": ["ctrl+alt+k"], "command": "unix_time_convert" }
+~~~
+
+add above to key bindings and the .py to the user package directory
