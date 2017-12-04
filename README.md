@@ -21,7 +21,12 @@ The _dropCursor_ argument for loading will determine if you keep the the current
 
 key binding:
 ~~~ Json
-    { "keys": ["ctrl+alt+k"], "command": "unix_time_convert" }
+    { "keys": ["ctrl+alt+k"], "command": "unix_time_convert", "args": {"precision": 1}},
+    { "keys": ["ctrl+alt+d"], "command": "unix_time_convert", "args": {"precision": 0}}
 ~~~
 
 add above to key bindings and the .py to the user package directory
+
+The _precision_ argument will determine if the timestamp is used at second or millisecond precision.
+0 = second
+1 = millisecond
